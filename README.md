@@ -1,31 +1,33 @@
-# ChestTerminal
-ChestTerminal is a [Slimefun4](https://github.com/TheBusyBiscuit/Slimefun4/) Addon.<br>
-You need to install Slimefun4 in order for this plugin to work.
+# ChestTerminal 箱子终端
 
-ChestTerminal is a Slimefun4 Addon that is heavily inspired by the famous mod [Applied Energistics](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2).
-It adds a Chest Terminal that you can hook up to a Cargo System to access all your items that are accessible through Cargo Nodes on the CT-Channel.
+ChestTerminal 是一个 [Slimefun4](https://github.com/TheBusyBiscuit/Slimefun4/) 附属。<br>
+你必须先安装Slimefun4才能让本插件正常运行。
 
-**Warning**: ChestTerminal can be very heavy on performance. This addon can cause quite a bit of lag, so make sure that you are aware of this when installing.
+ChestTerminal 的灵感来源于模组 [Applied Energistics](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2) 。它添加了一个箱子终端，可以绑定到货运系统中，来访问所有在CT频道中的物品。
 
-[Read more...](https://github.com/TheBusyBiscuit/Slimefun4/wiki/ChestTerminal)
+**警告**: ChestTerminal 会对性能有较大影响。该附属插件可能会导致服务器滞后(lag)，请确保你在安装本附属插件前已知晓
 
-## Download ChestTerminal
-You can download ChestTerminal right here: [Development Builds](https://thebusybiscuit.github.io/builds/TheBusyBiscuit/ChestTerminal/master/)
+[了解更多...](https://github.com/TheBusyBiscuit/Slimefun4/wiki/ChestTerminal)
+
+## 下载 ChestTerminal
+
+点击这里下载 ChestTerminal: [下载 ChestTerminal](https://github.com/ybw0014/ChestTerminal-CN/actions/workflows/maven.yml)
 
 <p align="center">
-  <a href="https://thebusybiscuit.github.io/builds/TheBusyBiscuit/ChestTerminal/master/">
-    <img src="https://thebusybiscuit.github.io/builds/TheBusyBiscuit/ChestTerminal/master/badge.svg" alt="Build Server"/>
+  <a href="https://github.com/ybw0014/ChestTerminal-CN/actions/workflows/maven.yml">
+    <img src="https://github.com/ybw0014/ChestTerminal-CN/actions/workflows/maven.yml/badge.svg" alt="Auto Build"/>
   </a>
 </p>
 
+
 ## Discord
-You can find Slimefun's community on Discord!
-Click the badge down below to join the server for suggestions/questions or other discussions about this plugin.
+你可以在 Discord 上找到 Slimefun 社区!
+点击下方加入服务器，提出建议、问题或参与其他有关本插件的讨论。
 <p align="center">
   <a href="https://discord.gg/fsD4Bkh">
     <img src="https://img.shields.io/discord/565557184348422174?color=7289DA&label=Discord&style=for-the-badge" alt="Discord Invite"/>
   </a>
 </p>
 
-## Open Source
-This Project is open-source and licensed under the [MIT License](https://github.com/TheBusyBiscuit/ChestTerminal/blob/master/LICENSE)
+## 开源许可
+本项目以 [MIT 许可](https://github.com/TheBusyBiscuit/HotbarPets/blob/master/LICENSE) 开源

@@ -24,7 +24,7 @@ public class ExportBus extends SlimefunItem {
     public ExportBus(Category category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(category, item, recipeType, recipe);
 
-        new BlockMenuPreset(getId(), "&3CT Export Bus") {
+        new BlockMenuPreset(getId(), "&3CT输出总线") {
 
             @Override
             public void init() {
@@ -72,7 +72,7 @@ public class ExportBus extends SlimefunItem {
         preset.addItem(25, new CustomItem(Material.BLUE_STAINED_GLASS_PANE, " "), click);
         preset.addItem(26, new CustomItem(Material.BLUE_STAINED_GLASS_PANE, " "), click);
 
-        preset.addItem(2, new CustomItem(Material.PAPER, "&3Items", "", "&bPut in all Items you want to", "&bwhitelist"), click);
+        preset.addItem(2, new CustomItem(Material.PAPER, "&3物品", "", "&b将你想要添加到黑白名单", "&b的物品放入此处"), click);
     }
 
     public int[] getInputSlots() {

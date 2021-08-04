@@ -37,24 +37,24 @@ public class ChestTerminal extends JavaPlugin implements Listener, SlimefunAddon
 
 		if (getDescription().getVersion().startsWith("DEV - ")) {
 			// If we are using a development build, we want to switch to our custom 
-			updater = new GitHubBuildsUpdater(this, getFile(), "TheBusyBiscuit/ChestTerminal/master");
+			updater = new GitHubBuildsUpdater(this, getFile(), "ybw0014/ChestTerminal-CN/master");
 		}
 
 		if (updater != null && cfg.getBoolean("options.auto-update")) updater.start();
 		
-		SlimefunItemStack milkyQuartz = new SlimefunItemStack("MILKY_QUARTZ", Material.QUARTZ, "&fMilky Quartz");
-		SlimefunItemStack ctPanel = new SlimefunItemStack("CT_PANEL", "7a44ff3a5f49c69cab676bad8d98a063fa78cfa61916fdef3e267557fec18283", "&3CT Illuminated Panel", "&7Crafting Component");
+		SlimefunItemStack milkyQuartz = new SlimefunItemStack("MILKY_QUARTZ", Material.QUARTZ, "&f乳白色石英");
+		SlimefunItemStack ctPanel = new SlimefunItemStack("CT_PANEL", "7a44ff3a5f49c69cab676bad8d98a063fa78cfa61916fdef3e267557fec18283", "&3CT发光面板", "&7制造组件");
 		
-		SlimefunItemStack chestTerminal = new SlimefunItemStack("CHEST_TERMINAL", "7a44ff3a5f49c69cab676bad8d98a063fa78cfa61916fdef3e267557fec18283", "&3CT Access Terminal", "&7If this Block is connected to a", "&7Cargo Network, it will allow you to remotely", "&7interact with any Items supplied by", "&7Nodes tuned into the ChestTerminal Channel");
-		SlimefunItemStack importBus = new SlimefunItemStack("CT_IMPORT_BUS", "113db2e7e72ea4432eefbd6e58a85eaa2423f83e642ca41abc6a9317757b889", "&3CT Import Bus", "&7If this Block is connected to a", "&7Cargo Network, it will pull any Items from", "&7the Inventory it is attached to and place it", "&7into the CT Network Channel");
-		SlimefunItemStack exportBus = new SlimefunItemStack("CT_EXPORT_BUS", "113db2e7e72ea4432eefbd6e58a85eaa2423f83e642ca41abc6a9317757b889", "&3CT Export Bus", "&7If this Block is connected to a", "&7Cargo Network, it will pull any Items from", "&7the CT Network Channel and place these", "&7into the Inventory it is attached to");
+		SlimefunItemStack chestTerminal = new SlimefunItemStack("CHEST_TERMINAL", "7a44ff3a5f49c69cab676bad8d98a063fa78cfa61916fdef3e267557fec18283", "&3CT访问终端", "&7当此方块连接到货运网络时，", "&7你可以与连入箱子终端频道的货运节点进行远程交互。");
+		SlimefunItemStack importBus = new SlimefunItemStack("CT_IMPORT_BUS", "113db2e7e72ea4432eefbd6e58a85eaa2423f83e642ca41abc6a9317757b889", "&3CT输入总线", "&7当此方块连接到货运网络时，", "&7它将从其附着的方块中获取物品", "&7并放入箱子终端的货运频道。");
+		SlimefunItemStack exportBus = new SlimefunItemStack("CT_EXPORT_BUS", "113db2e7e72ea4432eefbd6e58a85eaa2423f83e642ca41abc6a9317757b889", "&3CT输出总线", "&7当此方块连接到货运网络时，", "&7它将从箱子终端的货运频道中获取物品", "&7并放入其附着的方块中。");
 		
-		SlimefunItemStack wirelessTerminal16 = new SlimefunItemStack("CT_WIRELESS_ACCESS_TERMINAL_16", Material.ITEM_FRAME, "&3CT Wireless Access Terminal &b(16)", "&8\u21E8 &7Linked to: &cNowhere", "&8\u21E8 &7Range: &e16 Blocks", "&c&o&8\u21E8 &e\u26A1 &70 / 10 J", "", "&7If this Block is linked to an Access Terminal", "&7it will be able to remotely access that Terminal", "", "&7&eRight Click on an Access Terminal &7to link", "&7&eRight Click&7 to open the linked Terminal");
-		SlimefunItemStack wirelessTerminal64 = new SlimefunItemStack("CT_WIRELESS_ACCESS_TERMINAL_64", Material.ITEM_FRAME, "&3CT Wireless Access Terminal &b(64)", "&8\u21E8 &7Linked to: &cNowhere", "&8\u21E8 &7Range: &e64 Blocks", "&c&o&8\u21E8 &e\u26A1 &70 / 25 J", "", "&7If this Block is linked to an Access Terminal", "&7it will be able to remotely access that Terminal", "", "&7&eRight Click on an Access Terminal &7to link", "&7&eRight Click&7 to open the linked Terminal");
-		SlimefunItemStack wirelessTerminal128 = new SlimefunItemStack("CT_WIRELESS_ACCESS_TERMINAL_128", Material.ITEM_FRAME, "&3CT Wireless Access Terminal &b(128)", "&8\u21E8 &7Linked to: &cNowhere", "&8\u21E8 &7Range: &e128 Blocks", "&c&o&8\u21E8 &e\u26A1 &70 / 50 J", "", "&7If this Block is linked to an Access Terminal", "&7it will be able to remotely access that Terminal", "", "&7&eRight Click on an Access Terminal &7to link", "&7&eRight Click&7 to open the linked Terminal");
-		SlimefunItemStack wirelessTerminalTransdimensional = new SlimefunItemStack("CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL", Material.ITEM_FRAME, "&3CT Wireless Access Terminal &b(Transdimensional)", "&8\u21E8 &7Linked to: &cNowhere", "&8\u21E8 &7Range: &eUnlimited", "&c&o&8\u21E8 &e\u26A1 &70 / 50 J", "", "&7If this Block is linked to an Access Terminal", "&7it will be able to remotely access that Terminal", "", "&7&eRight Click on an Access Terminal &7to link", "&7&eRight Click&7 to open the linked Terminal");
+		SlimefunItemStack wirelessTerminal16 = new SlimefunItemStack("CT_WIRELESS_ACCESS_TERMINAL_16", Material.ITEM_FRAME, "&3无线访问箱子终端 &b(16)", "&8\u21E8 &7连接到: &c未连接", "&8\u21E8 &7范围: &e16 个方块", "&c&o&8\u21E8 &e\u26A1 &70 / 10 J", "", "&7当此物品连接到一个CT访问终端时，", "&7你可以远程访问该终端。", "", "&7&e右键点击CT访问终端&7以连接", "&7&e右键点击&7打开连接的终端");
+		SlimefunItemStack wirelessTerminal64 = new SlimefunItemStack("CT_WIRELESS_ACCESS_TERMINAL_64", Material.ITEM_FRAME, "&3无线访问箱子终端 &b(64)", "&8\u21E8 &7连接到: &c未连接", "&8\u21E8 &7范围: &e64 个方块", "&c&o&8\u21E8 &e\u26A1 &70 / 25 J", "", "&7当此物品连接到一个CT访问终端时，", "&7你可以远程访问该终端。", "", "&7&e右键点击CT访问终端&7以连接", "&7&e右键点击&7打开连接的终端");
+		SlimefunItemStack wirelessTerminal128 = new SlimefunItemStack("CT_WIRELESS_ACCESS_TERMINAL_128", Material.ITEM_FRAME, "&3无线访问箱子终端 &b(128)", "&8\u21E8 &7连接到: &c未连接", "&8\u21E8 &7范围: &e128 个方块", "&c&o&8\u21E8 &e\u26A1 &70 / 50 J", "", "&7当此物品连接到一个CT访问终端时，", "&7你可以远程访问该终端。", "", "&7&e右键点击CT访问终端&7以连接", "&7&e右键点击&7打开连接的终端");
+		SlimefunItemStack wirelessTerminalTransdimensional = new SlimefunItemStack("CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL", Material.ITEM_FRAME, "&3无线访问箱子终端 &b(跨次元)", "&8\u21E8 &7连接到: &c未连接", "&8\u21E8 &7范围: &e无限", "&c&o&8\u21E8 &e\u26A1 &70 / 50 J", "", "&7当此物品连接到一个CT访问终端时，", "&7你可以远程访问该终端。", "", "&7&e右键点击CT访问终端&7以连接", "&7&e右键点击&7打开连接的终端");
 		
-		Category category = new Category(new NamespacedKey(this, "chest_terminal"), new CustomItem(chestTerminal, "&5Chest Terminal", "", "&a> Click to open"));
+		Category category = new Category(new NamespacedKey(this, "chest_terminal"), new CustomItem(chestTerminal, "&5箱子终端", "", "&a> 点击打开"));
 		
 		new SlimefunItem(category, milkyQuartz, RecipeType.GEO_MINER, 
 		new ItemStack[0])
@@ -146,6 +146,6 @@ public class ChestTerminal extends JavaPlugin implements Listener, SlimefunAddon
 
 	@Override
 	public String getBugTrackerURL() {
-		return "https://github.com/TheBusyBiscuit/ChestTerminal/issues";
+		return "https://github.com/ybw0014/ChestTerminal/issues";
 	}
 }
