@@ -5,17 +5,19 @@ ChestTerminal 是一个 [Slimefun4](https://github.com/TheBusyBiscuit/Slimefun4/
 
 ChestTerminal 的灵感来源于模组 [Applied Energistics](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2) 。它添加了一个箱子终端，可以绑定到货运系统中，来访问所有在CT频道中的物品。
 
-**警告**: ChestTerminal 会对性能有较大影响。该附属插件可能会导致服务器滞后(lag)，请确保你在安装本附属插件前已知晓
-
-[了解更多...](https://github.com/TheBusyBiscuit/Slimefun4/wiki/ChestTerminal)
+**警告**: ChestTerminal 会对性能有较大影响。该附属插件可能会导致服务器滞后(lag)，请确保你在安装本附属插件前已知晓。
 
 ## 下载 ChestTerminal
 
-点击这里下载 ChestTerminal: [下载 ChestTerminal](https://github.com/ybw0014/ChestTerminal-CN/actions/workflows/maven.yml)
+点击这里下载 ChestTerminal: [下载 ChestTerminal](https://github.com/ybw0014/ChestTerminal-CN/actions/workflows/build.yml)
 
 <p align="center">
   <a href="https://github.com/ybw0014/ChestTerminal-CN/actions/workflows/maven.yml">
-    <img src="https://github.com/ybw0014/ChestTerminal-CN/actions/workflows/maven.yml/badge.svg" alt="Auto Build"/>
+    <img src="https://github.com/ybw0014/ChestTerminal-CN/actions/workflows/maven.yml/badge.svg" alt="Java CI"/>
+  </a>
+
+  <a href="https://github.com/ybw0014/ChestTerminal-CN/actions/workflows/build.yml">
+    <img src="https://github.com/ybw0014/ChestTerminal-CN/actions/workflows/build.yml/badge.svg" alt="Auto Build"/>
   </a>
 </p>
 
