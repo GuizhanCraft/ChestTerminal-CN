@@ -7,6 +7,8 @@ ChestTerminal 的灵感来源于模组 [Applied Energistics](https://www.cursefo
 
 **警告**: ChestTerminal 会对性能有较大影响。该附属插件可能会导致服务器滞后(lag)，请确保你在安装本附属插件前已知晓。
 
+**目前官方已停止更新并不再进行后续维护，建议使用性能更好的Networks(网络)附属来代替本插件。** [点我查看](https://github.com/ybw0014/Networks)
+
 ## 下载 ChestTerminal
 
 点击这里下载 ChestTerminal: [下载 ChestTerminal](https://builds.guizhanss.net/ybw0014/ChestTerminal-CN/master)
